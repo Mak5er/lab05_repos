@@ -1,0 +1,16 @@
+# Executables
+*.o
+*.obj
+*.exe
+*.out
+Lab_05_1
+UnitTest_05_1
+!*.cpp
+!*.h
+!*.hpp
+
+# Debug symbols
+*.dSYM/
+
+# OS files
+.DS_Store
