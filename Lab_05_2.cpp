@@ -33,7 +33,7 @@ int main()
     cout << "-------------------------------------------------" << endl;
 
     x = xp;
-    while (x <= xk)
+    while (x <= xk + dx / 2)
     {
         S(x, eps, n, s);
 
