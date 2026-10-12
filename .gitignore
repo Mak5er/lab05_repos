@@ -5,6 +5,10 @@
 *.out
 Lab_05_1
 UnitTest_05_1
+Lab_05_2
+UnitTest_05_2
+Lab_05_3
+UnitTest_05_3
 !*.cpp
 !*.h
 !*.hpp
