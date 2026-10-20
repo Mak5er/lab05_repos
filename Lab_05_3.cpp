@@ -28,21 +28,20 @@ int main()
     double k = kp;
 
     cout << fixed;
-    cout << "----------------------------------" << endl;
-    cout << "|" << setw(7) << "k" << "     |"
-         << setw(12) << "z" << "       |" << endl;
-    cout << "----------------------------------" << endl;
+    cout << "\n+----------+----------------+" << endl;
+    cout << "|    k     |       z        |" << endl;
+    cout << "+----------+----------------+" << endl;
 
     while (k <= kk + dk / 2)
     {
         z = j(1 + k + j(k)) + pow(j(1 + k * k), 2);
 
-        cout << "|" << setw(9) << setprecision(2) << k << "   |"
-             << setw(16) << setprecision(5) << z << "   |" << endl;
+        cout << "| " << setw(8) << setprecision(2) << k << " | "
+             << setw(14) << setprecision(5) << z << " |" << endl;
 
         k += dk;
     }
-    cout << "----------------------------------" << endl;
+    cout << "+----------+----------------+" << endl;
 
     return 0;
 }

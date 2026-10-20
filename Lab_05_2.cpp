@@ -28,27 +28,23 @@ int main()
     cin >> eps;
 
     cout << fixed;
-    cout << "-------------------------------------------------" << endl;
-    cout << "|" << setw(5) << "x" << "     |"
-         << setw(10) << "exp(x^2)" << "   |"
-         << setw(7) << "S" << "      |"
-         << setw(5) << "n" << "   |"
-         << endl;
-    cout << "-------------------------------------------------" << endl;
+    cout << "\n+----------+--------------+--------------+--------+" << endl;
+    cout << "|    x     |   exp(x^2)   |      S       |   n    |" << endl;
+    cout << "+----------+--------------+--------------+--------+" << endl;
 
     x = xp;
     while (x <= xk + dx / 2)
     {
         S(x, eps, n, s);
 
-        cout << "|" << setw(7) << setprecision(2) << x << "   |"
-             << setw(10) << setprecision(5) << exp(x * x) << "   |"
-             << setw(10) << setprecision(5) << s << "   |"
-             << setw(5) << n << "   |"
+        cout << "| " << setw(8) << setprecision(2) << x << " | "
+             << setw(12) << setprecision(5) << exp(x * x) << " | "
+             << setw(12) << setprecision(5) << s << " | "
+             << setw(6) << n << " |"
              << endl;
         x += dx;
     }
-    cout << "-------------------------------------------------" << endl;
+    cout << "+----------+--------------+--------------+--------+" << endl;
 
     return 0;
 }
