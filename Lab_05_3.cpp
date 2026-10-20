@@ -17,18 +17,21 @@ int main()
     double kp, kk, z;
     int n;
 
-    cout << "kp = "; cin >> kp;
-    cout << "kk = "; cin >> kk;
-    cout << "n  = "; cin >> n;
+    cout << "kp = ";
+    cin >> kp;
+    cout << "kk = ";
+    cin >> kk;
+    cout << "n  = ";
+    cin >> n;
 
     double dk = (kk - kp) / n;
     double k = kp;
 
     cout << fixed;
-    cout << "--------------------------------" << endl;
-    cout << "|" << setw(7)  << "k" << "     |"
+    cout << "----------------------------------" << endl;
+    cout << "|" << setw(7) << "k" << "     |"
          << setw(12) << "z" << "       |" << endl;
-    cout << "--------------------------------" << endl;
+    cout << "----------------------------------" << endl;
 
     while (k <= kk + dk / 2)
     {
@@ -39,7 +42,7 @@ int main()
 
         k += dk;
     }
-    cout << "--------------------------------" << endl;
+    cout << "----------------------------------" << endl;
 
     return 0;
 }
@@ -54,7 +57,8 @@ double j(const double x)
         int i = 0;
         double a = x;
         S = a;
-        do {
+        do
+        {
             i++;
             double R = (x * x) / ((2 * i) * (2 * i + 1));
             a *= R;

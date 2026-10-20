@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Tests",
+      "type": "shell",
+      "command": "make tests",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Build Labs",
+      "type": "shell",
+      "command": "make labs",
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Run Tests",
+      "type": "shell",
+      "command": "make test",
+      "dependsOn": ["Build Tests"],
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

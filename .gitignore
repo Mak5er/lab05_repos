@@ -4,11 +4,12 @@
 *.exe
 *.out
 Lab_05_1
-UnitTest_05_1
 Lab_05_2
-UnitTest_05_2
 Lab_05_3
-UnitTest_05_3
+Lab_05_4
+Lab_05_5
+UnitTest_*
+tests/UnitTest_*
 !*.cpp
 !*.h
 !*.hpp
@@ -18,3 +19,6 @@ UnitTest_05_3
 
 # OS files
 .DS_Store
+
+# Tool cache
+.serena/

@@ -15,8 +15,10 @@ int main()
 {
     double s, t;
 
-    cout << "s = "; cin >> s;
-    cout << "t = "; cin >> t;
+    cout << "s = ";
+    cin >> s;
+    cout << "t = ";
+    cin >> t;
 
     double c = (g(2, s) + pow(1 + pow(g(t, 1), 2), 3)) / sqrt(1 + pow(g(s, t), 2));
 
